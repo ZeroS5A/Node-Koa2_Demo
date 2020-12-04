@@ -14,7 +14,7 @@ app.use(async (ctx,next) => {
 app
   .use(bodyParser())
   .use(controller())
-  .listen(3030)
+  .listen(3030,'0.0.0.0')
 
 
 console.log("\033[42;30m ServerRuning \033[0m")

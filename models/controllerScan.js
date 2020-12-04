@@ -18,6 +18,9 @@ function addMapping(router, mapping) {
         router[urlMod[0].toLowerCase()](urlMod[1], mapping[url])
         console.log(`${urlMod[0]} mapping URL: ${url}`);
       }
+      else {
+        console.log('\033[40;31m ERROR '+ url +' \033[0m')
+      }
     }
 }
 
