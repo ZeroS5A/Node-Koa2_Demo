@@ -8,6 +8,7 @@ console.clear()
 
 app = new Koa()
 app.use(async (ctx,next) => {
+  console.log("Token: ", ctx.request.header.token)
   await next()
 })
 
